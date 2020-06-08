@@ -1,0 +1,414 @@
+@font-face {
+    font-family: alibaba;
+    src: url(../font/AlibabaSans-Regular.otf);
+  }
+body {
+    font-family: 'alibaba', sans-serif;
+    background-color: #53A4CF;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html, body {
+    margin:0
+}
+
+.header {
+    background-color: #53A4CF;
+    display: flex;
+    align-items: stretch;
+    padding: 25px 25px;
+    /* height: 100px; */
+}
+.menu-header {
+    text-align: center;
+    margin-top: 2vh;
+    color: white;
+    font-size: 2vw;
+    align-items: center;
+}
+.menu-header img {
+    width: 50%;
+
+}
+.header #logo img {
+    width: 30vw;
+    margin-left: 10vw;
+}
+
+.header .menu {
+    height: 60px;
+    margin: 0 auto;
+    max-width: 1140px;
+    align-items: center;
+} 
+
+.header nav {
+    justify-content: flex-end;
+}
+
+.header nav ul {
+display: flex;
+justify-content: space-between;
+list-style: none;
+align-items: center;
+}
+.header nav li {
+    margin-left: 20px;
+}
+.top-icons {
+    color:white;
+    font-size: 7vw;
+}
+.icons {
+    color:#53A4CF;
+    font-size: 6vw;
+}
+
+#arrow {
+    color: white;
+    display:flex;
+    justify-content: center;
+    margin-top: 10px;
+    /* height: 10px; */
+    z-index:1111;
+}
+
+#greetings {
+    font-size: 4vw;
+    color: white;
+    display:flex;
+    justify-content: center;
+    /* height: 80px; */
+}
+.conteudo {
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    /* padding: 10px 30px; */
+    position: fixed;
+    width: 100vw;
+    height: 76vh;
+    /* height: calc(100vh - 380px); */
+    bottom: 0px;
+    transition: all .5s ease;
+    overflow-y: auto;
+  }
+  .conteudo h1 { 
+      font-size: 6vw;
+      color: #53A4CF;
+  }
+  .conteudo h4 { 
+    font-size: 5vw;
+}
+.conteudo > div span{
+    font-size: 3vw;
+}
+  
+.conteudo > div {
+    width: 40vw;
+    margin: auto;
+    border: solid 1px;
+    border-radius: 25px;
+    border-color: #53A4CF;
+    /* line-height: 73px; */
+    padding: 5vh 0vh;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 3px 10px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .conteudo-offers {
+    /* display: flex; */
+    flex-wrap: wrap;
+    border-radius: 25px 25px 0px 0px;
+    background-color: white;
+    text-align: center;
+    /* padding: 10px 30px; */
+    position: fixed;
+    width: 100vw;
+    height: 76vh;
+    /* height: calc(100vh - 380px); */
+    bottom: 0px;
+    transition: all .5s ease;
+    overflow-y: auto;
+  }
+  .page-title {
+      width: 100vw;
+      align-items: center;
+      font-size: 5vw;
+      padding: 1vh 0vw;
+      color: #f5ba43
+  }
+
+  .sidebar {
+    position: fixed;
+    left: -50vw;
+    width: 50vw;
+    height: 100%;
+    background: #53a4cf;
+    transition: all .5s ease;
+    z-index:5;
+  }
+  .sidebar header {
+    font-size: 5vw;
+    color: white;
+    line-height: 70px;
+    text-align: center;
+    background: #3b7594;
+    user-select: none;
+  }
+  .sidebar ul a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 8vh;
+    font-size: 3vw;
+    color: white;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #3b7594;
+    border-top: 1px solid rgba(255,255,255,.1);
+    transition: .4s;
+  }
+  
+
+#downArrow {    
+    display:block;
+} 
+
+#upArrow {
+    display:none;
+}
+
+#check {
+    display: none;
+}
+
+label #btn, label #cancel{
+    position: absolute;
+    cursor: pointer;
+}
+label #btn{
+    color: white;
+    transition: all .5s;
+}
+label #cancel {
+    z-index: 1111;
+    color: white;
+    transition: all .5s ease;
+    opacity: 0;
+}
+#check:checked ~ .conteudo{
+    bottom: -400px;
+}
+#check:checked ~ label #btn{
+    bottom: 80px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    bottom: 80px;
+    opacity: 1;
+}  
+
+.footer {
+    flex-shrink: 0; 
+    display:block; 
+    width:100%;
+    height: 120px;
+    position: fixed;
+    bottom: 0px;
+    border-top: #ddd solid 1px;
+    background-color: white;
+}
+
+.footer > .options {
+    height: 100%;
+display: flex;
+justify-content: stretch;
+list-style: none;
+align-items: center;
+text-align: center;
+}
+
+.footer div i {
+    align-items: center;
+}
+.opt-text {
+    color:#53A4CF;
+    font-size: 30px;
+}
+
+.user-edit {
+    top: -1150px;
+    position:fixed;
+    align-items: center;
+    transition: all .5s ease;
+    padding: 0px 30px;
+    overflow-y: auto;
+    height: 70%;
+}
+#userForm {
+    margin: 3vh 0vh;
+    text-align: center;
+    font-size: 4vw;
+
+}
+
+#userForm label {
+    color:#53A4CF;
+}
+
+#userForm input{
+    width: 100%;
+    height: 5vh;
+    font-size: unset;
+    color:white;
+    /* margin-top: 3vh; */
+    margin-bottom: 3vh;
+    text-align: center;
+    border-radius: 5px;
+    border: solid 1px #fff;
+    background-color: #53A4CF;
+
+}
+#userForm button {
+    padding: 1vh 5vw;
+    font-size: 4vw;
+    margin: 3vh 0vh;
+    background-color: white;
+    color: #53A4CF;
+    border-radius: 5px;
+    border: none;
+}
+#userForm select {
+    width: 100%;
+    height: 5vh;
+    font-size: 3vw;
+    color:#53A4CF;
+    /* margin-top: 3vh; */
+    margin-bottom: 3vh;
+    text-align: center;
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid #53A4CF;
+}
+#userForm option {
+font-size: unset;
+}
+.form-edit {
+    /* position:fixed; */
+    align-items: center;
+    transition: all .5s ease;
+    padding: 0px 30px;
+    overflow-y: auto;
+    margin-top: 6vh;
+}
+
+/*menu*/
+.sidebar ul a i{
+    margin-right: 16px;
+  }
+  #checkmenu{
+    display: none;
+    font-size: 7vw;;
+  }
+  label #btnmenu,label #cancelmenu{
+    position: absolute;
+    /* background: #042331; */
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  label #btnmenu{
+    left: 5vw;
+    top: 3vh;
+    font-size: 5vw;
+    color: white;
+    transition: all .5s;
+  }
+  label #cancelmenu{
+    z-index: 1111;
+    left: -195px;
+    top: 1.7vh;
+    font-size: 7vw;
+    color: #fff;
+    transition: all .5s ease;
+  }
+  #checkmenu:checked ~ .sidebar{
+    left: 0;
+  }
+  #checkmenu:checked ~ label #btnmenu{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+  }
+  #checkmenu:checked ~ label #cancelmenu{
+    left: 43vw;
+  }
+  #checkmenu:checked ~ section{
+    margin-left: 250px;
+  }
+  section{
+    background: url(bg.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    transition: all .5s;
+  }
+  .icon-menu {
+  margin-right:10px;
+  }
+
+  .tab-bar {
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      top: -1200px;
+    transition: all .5s ease;
+    position: fixed;
+  }
+  .tab-bar button {
+    width: 45vw;
+    background-color: white;
+    color: #53A4CF;
+    margin: 0px 3vw;
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vw;
+    border:none;
+}
+.tab-bar-offers {
+    width: 100vw;
+      display: flex;
+      justify-content: center;
+    transition: all .5s ease;
+    position: fixed;
+}
+.tab-bar-offers button {
+    width: 45vw;
+    background-color: #53A4CF;
+    color: white;
+    margin: 0px 3vw;
+    text-align: center;
+    padding: 1vh;
+    font-size: 3vw;
+    border:none;
+}
+.offers {
+    transition: all .5s ease;
+    padding: 0px 5vw;
+    overflow-y: auto;
+    margin-top: 1vh;
+    font-size: 3vw;
+}
+.offers div {
+    display: flex;
+    justify-content: left;
+    padding-bottom:2vh;
+}
