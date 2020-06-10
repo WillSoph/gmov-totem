@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
-export default function CardList() {
+export default function Offers() {
 
     return (
         <div className={styles.body}>
@@ -15,26 +15,18 @@ export default function CardList() {
             <Header />
             <div className={styles.miolo}>
                 <div className={styles['page-title']}>
-                    <p>Ofertas Solicitadas</p>
-                </div>
-                <div className={styles['tab-bar-offers']}>
-                    <Link href="/offers"><a><button className="">Disponíveis</button></a></Link>
-                    <Link href="/requested-offers"><a><button className="">Solicitadas</button></a></Link>
+                    <p>Meus Cartões</p>
                 </div>
 
+                <div className={styles.cardlist}>
+                    <FontAwesomeIcon icon="credit-card" size="6x" color="#f5ba43" className={styles['icon-menu']} />
+                    <p>Você ainda não tem um cartão na sua conta. Adicione agora mesmo.</p>
 
-
-                <div className={styles.offers}>
-                    <div><FontAwesomeIcon icon="home" size="lg" color="black" className={styles['icon-menu']} /><b>Origem: </b>
-                        <p>Angra dos Reis - RJ</p>
+                    <div className={styles.divButton}>
+                        <Link href="/add-card"><a>
+                            <button className={styles.greentbutton} value="Confirmar">Adicionar</button></a>
+                        </Link>
                     </div>
-                    <div><FontAwesomeIcon icon="map-marked-alt" size="lg" color="black" className={styles['icon-menu']} /><b>Destino: </b>
-                        <p>Jundiaí - SP</p>
-                    </div>
-                    <div><FontAwesomeIcon icon="truck-moving" size="lg" color="black" className={styles['icon-menu']} /><b>Veículo: </b>
-                        <p>Rodotrem 8m-9e-74t</p>
-                    </div>
-
                 </div>
 
             </div>

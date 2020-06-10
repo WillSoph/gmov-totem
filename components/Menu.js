@@ -27,11 +27,11 @@ export default function Menu() {
                 </div>
                 <ul>
                     <li><Link href="/"><a><FontAwesomeIcon icon="home" size="lg" color="white" className={styles['icon-menu']} />HOME</a></Link></li>
-                    <li><a href="#"><FontAwesomeIcon icon="map-marked" size="lg" color="white" className={styles['icon-menu']} />REGIÃO DE INTERESSE</a></li>
-                    <li><a href="#"><FontAwesomeIcon icon="truck-moving" size="lg" color="white" className={styles['icon-menu']} />VEÍCULOS</a></li>
+                    <li><a href="/interest-region"><FontAwesomeIcon icon="map-marked" size="lg" color="white" className={styles['icon-menu']} />REGIÃO DE INTERESSE</a></li>
+                    <li><a href="/my-vehicles"><FontAwesomeIcon icon="truck-moving" size="lg" color="white" className={styles['icon-menu']} />VEÍCULOS</a></li>
                     <li><Link href="/offers"><a><FontAwesomeIcon icon="truck-loading" size="lg" color="white" className={styles['icon-menu']} />OFERTAS DE FRETES</a></Link></li>
-                    <li><a href="#"><FontAwesomeIcon icon="wallet" size="lg" color="white" className={styles['icon-menu']} />SALDO DOS CARTÕES</a></li>
-                    <li><a href="#"><FontAwesomeIcon icon="comment" size="lg" color="white" className={styles['icon-menu']} />CHAT</a></li>
+                    <li><a href="/card-list"><FontAwesomeIcon icon="wallet" size="lg" color="white" className={styles['icon-menu']} />SALDO DOS CARTÕES</a></li>
+                    <li><a href="/login"><FontAwesomeIcon icon="sign-out-alt" size="lg" color="white" className={styles['icon-menu']} />SAIR</a></li>
                 </ul>
             </div>
 

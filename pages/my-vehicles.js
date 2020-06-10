@@ -21,22 +21,22 @@ export default function MyVehicles() {
                 <div className={styles.vehicle}>
                     <div><FontAwesomeIcon icon="truck" size="6x" color="#f5ba43" className={styles['icon-vehicle']} />
                         <div className={styles.divButton}>
-                            <button className={styles.defaultbutton} value="Confirmar">Adicionar</button>
+                            <Link href="/add-vehicle"><button className={styles.defaultbutton} value="Confirmar">Adicionar</button></Link>
                         </div>
                     </div>
 
                 </div>
-                <div className={styles.offers}>
-                    <div><b>Placa: </b>
-                        <p>Angra dos Reis - RJ</p>
+                <div className={styles.myvehicles}>
+                    <div className={styles.myvehiclesitem}><p className={styles.negrit}>Placa: </p>
+                        <p>BUX8181</p>
                     </div>
-                    <div><b>Renavam: </b>
-                        <p>Jundiaí - SP</p>
+                    <div className={styles.myvehiclesitem}><p className={styles.negrit}>Renavam: </p>
+                        <p>00627065295</p>
                     </div>
-                    <div><b>Categoria: </b>
+                    <div className={styles.myvehiclesitem}><p className={styles.negrit}>Categoria: </p>
                         <p>Cavalo</p>
                     </div>
-                    <div><b>Descrição: </b>
+                    <div className={styles.myvehiclesitem}><p className={styles.negrit}>Descrição: </p>
                         <p>Caçamba Basculante 27-5 eix</p>
                     </div>
 

@@ -21,8 +21,8 @@ export default function AddVehicles() {
                 <div className={styles.vehicle}>
                     <div>
                         <div className={styles.divButton}>
-                            <button className={styles.greentbutton} value="Confirmar">Novo Cavalo</button>
-                            <button className={styles.greentbutton} value="Confirmar">Nova Carreta</button>
+                            <Link href="/new-cavalo"><button className={styles.greentbutton} value="Confirmar">Novo Cavalo</button></Link>
+                            <Link href="/new-carreta"><button className={styles.greentbutton} value="Confirmar">Nova Carreta</button></Link>
                         </div>
                     </div>
 
@@ -35,13 +35,13 @@ export default function AddVehicles() {
                         Busque aqui para adicioná-lo à sua lista no app.</p>
                 </div>
                 <div className={styles.referencies}>
-                    <label for="username">Placa do Veículo:</label><br></br>
+                    <label htmlFor="username">Placa do Veículo:</label><br></br>
                     <input type="text" id="refname" name="refname" /><br></br>
                     <button className={styles.defaultbutton}>Buscar</button>
                 </div>
 
             </div>
-        </div>
+        </div >
     )
 
 }
