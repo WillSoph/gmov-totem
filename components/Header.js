@@ -11,17 +11,25 @@ export default function Header() {
                 <div id={styles.logo}>
                     <Link href="/index"><a><img src="assets/images/logo/logo-painel.svg" /></a></Link>
                 </div>
-                <div><FontAwesomeIcon icon="comment" size="3x" color="white" className={styles['top-icons']} /></div>
-                <div><Link href="complete-information"><FontAwesomeIcon icon="bell" size="3x" color="white" className={styles['top-icons']} /></Link></div>
+                <div><Link href="/completeInformation"><a><FontAwesomeIcon icon="bell" size="3x" color="white" className={styles['top-icons']} /></a></Link></div>
 
             </div>
             <div id={styles.greetings}>
-                <p>Bem-Vindo João</p>
-            </div>
-            <div id={styles.usericon}>
-                <Link href="/edit-user"><a>
-                    <FontAwesomeIcon icon="user" size="2x" color="white" />
-                </a></Link>
+                <div className={styles.userHome}>
+                    <Link href="/edit-user"><a>
+                        <FontAwesomeIcon icon="user" size="sm" color="white" className={styles.greetingsIcon} />
+                    </a></Link>Bem-Vindo João
+                </div>
+                <div className={styles.userpointsHome}>
+                    <Link href="/card-list"><a>
+                        <FontAwesomeIcon icon="trophy" size="sm" color="white" className={styles.greetingsIcon} />
+                    </a></Link>12850 Pontos
+                </div>
+                <div className={styles.userWallet}>
+                    <Link href="/card-list"><a>
+                        <FontAwesomeIcon icon="wallet" size="sm" color="white" className={styles.greetingsIcon} />
+                    </a></Link>Saldo
+                </div>
             </div>
         </>
     )

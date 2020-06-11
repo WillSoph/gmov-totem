@@ -22,7 +22,7 @@ export default function Login() {
                     <label htmlFor="username">Senha</label><br></br>
                     <input type="text" id="refname" name="refname" /><br></br>
                     <Link href="/"><button className={styles.defaultbutton2}>Entrar</button></Link><br></br>
-                    <button className={styles.cadastrobutton}>Cadastre-se</button>
+                    <Link href="/register-1"><button className={styles.cadastrobutton}>Cadastre-se</button></Link>
                 </div>
 
             </div>
