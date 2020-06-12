@@ -13,16 +13,18 @@ export default function Login() {
                 <title>GMOV - Totem</title>
             </Head>
             <div className={styles.miolologin}>
-                <div id={styles.logologin}>
-                    <Link href="/index"><a><img src="assets/images/logo/logo-painel.svg" /></a></Link>
-                </div>
-                <div className={styles.loginpage}>
-                    <label htmlFor="username">CPF</label><br></br>
-                    <input type="text" id="refname" name="refname" /><br></br>
-                    <label htmlFor="username">Senha</label><br></br>
-                    <input type="text" id="refname" name="refname" /><br></br>
-                    <Link href="/"><button className={styles.defaultbutton2}>Entrar</button></Link><br></br>
-                    <Link href="/register-1"><button className={styles.cadastrobutton}>Cadastre-se</button></Link>
+                <div id={styles.formlogin}>
+                    <div id={styles.logologin}>
+                        <Link href="/index"><a><img src="assets/images/logo/logo-painel.svg" /></a></Link>
+                    </div>
+                    <div className={styles.loginpage}>
+                        <label htmlFor="username">CPF</label><br></br>
+                        <input type="text" id="refname" name="refname" /><br></br>
+                        <label htmlFor="username">Senha</label><br></br>
+                        <input type="text" id="refname" name="refname" /><br></br>
+                        <Link href="/"><button className={styles.defaultbutton2}>Entrar</button></Link><br></br>
+                        <Link href="/register-1"><button className={styles.cadastrobutton}>Cadastre-se</button></Link>
+                    </div>
                 </div>
 
             </div>

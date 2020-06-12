@@ -75,6 +75,13 @@ align-items: center;
     color:#53A4CF;
     font-size: 6vw;
 }
+.userHome span {
+    text-decoration: none;
+    color: white;
+}
+.userHome a:link {
+    text-decoration: none;
+  }
 
 #usericon {
     color: white;
@@ -126,11 +133,19 @@ align-items: center;
     flex-wrap: wrap; */
     height: 100vh;
     align-items: center;
-    padding: 10vh 3vw;
-    background-color: #53A4CF;
+    padding: 0vh 5vw;
+    background-image: url(../public/assets/images/login-background.png);
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
     bottom: 0px;
     transition: all .5s ease;
     overflow-y: auto;
+  }
+  #formlogin {
+      align-items: center;
+      margin-top: 20vh;
+      box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
   }
   #logologin {
     width: 50vw;
@@ -144,7 +159,7 @@ align-items: center;
     background-color: white;
     /* padding: 10px 30px; */
     /* position: fixed; */
-    height: 76vh;
+    height: 80vh;
     /* height: calc(100vh - 380px); */
     bottom: 0px;
     transition: all .5s ease;
@@ -157,7 +172,7 @@ align-items: center;
   }
   .conteudo h4 { 
     font-size: 4vw;
-    color: #454545;
+    color: white;
 }
 .conteudo > div span{
     font-size: 2vw;
@@ -167,10 +182,10 @@ align-items: center;
 .conteudo > div {
     width: 90vw;
     height: 30vh;
+    background-color: #53a4cf;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
     margin: 3vh auto 0 auto;
-    border: solid 1px;
     border-radius: 25px;
-    border-color: #f5ba41;
     /* line-height: 73px; */
     padding: 0vh 0vw;
     align-items: center;
@@ -181,34 +196,30 @@ align-items: center;
   height: 100%;
     border-radius: 25px 0px 0px 25px;
       width:40%; 
-      background-color: #f5ba41;
       background-size: cover;     
       background-repeat: no-repeat;
-      background-image: url('../public/assets/images/home-1.jpg');
-      opacity: 0.4;
+      background-image: url('../public/assets/images/home-1.jpg');      
 
   }
   .cardVeiclesTitle {
     height: 100%;
       border-radius: 25px 0px 0px 25px;
         flex-grow: 4; 
-        background-color: #f5ba41;
         background-size: cover;     
         background-repeat: no-repeat;
         background-image: url('../public/assets/images/home-2.jpg');
-        opacity: 0.4;
   
     }
   .cardcontent {
       width: 60%;
   }
   .homeoffer {
-      color: #f5ba41;
+      color: white;
       display: flex;
     align-items: stretch;
   }
   .homeoffer h1 {
-    color: #f5ba41;
+    color: white;
 }
 
   .conteudo-offers {
@@ -377,6 +388,7 @@ text-align: center;
     color: white;
     border-radius: 5px;
     border: none;
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
 #userForm select {
     width: 100%;
@@ -433,6 +445,7 @@ font-size: unset;
     padding: 0px 30px;
     overflow-y: auto;
     margin-top: 6vh;
+    height: inherit;
 }
 
 /*menu*/
@@ -521,6 +534,7 @@ font-size: unset;
     padding: 1vh;
     font-size: 3vw;
     border:none;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
 }
 .offers {
     transition: all .5s ease;
@@ -528,7 +542,8 @@ font-size: unset;
     overflow-y: auto;
     margin-top: 1vh;
     font-size: 2.5vw;
-    border: solid 1px black;
+    /* border: solid 1px black; */
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
 .offers div {
     align-items: center;
@@ -591,7 +606,7 @@ font-size: 3vw;
     background-color: #53A4CF;
     color: white;
     border-radius: 5px;
-    border: none;
+    border: solid 3px #fff;
 }
 .defaultbutton {
     padding: 1vh 5vw;
@@ -602,6 +617,7 @@ font-size: 3vw;
     color: white;
     border-radius: 5px;
     border: none;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
 }
 .defaultbutton2 {
     width: 40vw;
@@ -613,7 +629,7 @@ font-size: 3vw;
     color: #53A4CF;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px #000;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
 }
 .greentbutton {
     padding: 1vh 5vw;
@@ -626,6 +642,7 @@ font-size: 3vw;
     color: white;
     border-radius: 5px;
     border: none;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
 }
 .cancelbutton {
     padding: 1vh 5vw;
@@ -646,6 +663,7 @@ font-size: 3vw;
     color: white;
     border-radius: 5px;
     border: none;
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
 .cancelbutton2 {
     width:100%;
@@ -668,7 +686,7 @@ font-size: 3vw;
     color: white;
     border-radius: 5px;
     border: none;
-    box-shadow: 5px 5px 10px #000;
+    box-shadow: 0px 20px 30px 3px rgba(0, 0, 0, 0.55);
 }
 .cancelbutton3 {
     padding: 1vh 5vw;
@@ -701,6 +719,7 @@ font-size: 3vw;
     overflow-y: auto;
     margin-top: 1vh;
     font-size: 2.5vw;
+    height: inherit;
 }
 .myvehicles {
     transition: all .5s ease;
@@ -708,7 +727,7 @@ font-size: 3vw;
     overflow-y: auto;
     margin-top: 1vh;
     font-size: 3vw;
-    border: solid 1px black;
+    box-shadow: 0px 10px 15px 1px rgba(0, 0, 0, 0.3);
 }
 .myvehiclesitem {
 display: flex;

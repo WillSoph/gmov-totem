@@ -18,7 +18,7 @@ export default function Index() {
             <div className={styles.cardtitle}>
             </div>
             <div className={styles.cardcontent}>
-              <FontAwesomeIcon icon="road" size="4x" color="#f5ba41" />
+              <FontAwesomeIcon icon="road" size="4x" color="#fff" />
               <h1>92</h1>
               <h4>Cargas Disponíveis</h4>
               <button className={styles.defaultbuttonHome}>Escolha a sua agora!</button>
@@ -30,7 +30,7 @@ export default function Index() {
             <div className={styles.cardVeiclesTitle}>
             </div>
             <div className={styles.cardcontent}>
-              <FontAwesomeIcon icon="truck-moving" size="4x" color="#f5ba41" />
+              <FontAwesomeIcon icon="truck-moving" size="4x" color="#fff" />
               <h1>Meus Veículos</h1>
               <h4>Consulte ou adicione novos</h4>
               <button className={styles.defaultbuttonHome}>Clique aqui!</button>

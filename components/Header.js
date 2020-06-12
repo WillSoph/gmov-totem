@@ -17,18 +17,18 @@ export default function Header() {
             <div id={styles.greetings}>
                 <div className={styles.userHome}>
                     <Link href="/edit-user"><a>
-                        <FontAwesomeIcon icon="user" size="sm" color="white" className={styles.greetingsIcon} />
-                    </a></Link>Bem-Vindo João
+                        <FontAwesomeIcon icon="user" size="sm" color="white" className={styles.greetingsIcon} /><span>Bem-Vindo João</span>
+                    </a></Link>
                 </div>
-                <div className={styles.userpointsHome}>
+                <div className={styles.userHome}>
                     <Link href="/card-list"><a>
-                        <FontAwesomeIcon icon="trophy" size="sm" color="white" className={styles.greetingsIcon} />
-                    </a></Link>12850 Pontos
+                        <FontAwesomeIcon icon="trophy" size="sm" color="white" className={styles.greetingsIcon} /><span>12850 Pontos</span>
+                    </a></Link>
                 </div>
-                <div className={styles.userWallet}>
+                <div className={styles.userHome}>
                     <Link href="/card-list"><a>
-                        <FontAwesomeIcon icon="wallet" size="sm" color="white" className={styles.greetingsIcon} />
-                    </a></Link>Saldo
+                        <FontAwesomeIcon icon="wallet" size="sm" color="white" className={styles.greetingsIcon} /><span>Saldo</span>
+                    </a></Link>
                 </div>
             </div>
         </>
